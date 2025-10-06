@@ -6,7 +6,7 @@ const Book = ({ Data }) => {
   //console.log(data);
 
   return (
-    <div className="grid grid-cols-3 m-10 gap-5">
+    <div className="md:grid md:grid-cols-3 m-10 gap-5 flex flex-col justify-center items-center">
       {data.map((data) => (
         <ShowBook key={data.bookId} data={data}></ShowBook>
       ))}
