@@ -3,9 +3,13 @@ import React from "react";
 const Header = () => {
   const List = (
     <>
-      <li className="m-2">Home</li>
-      <li className="m-2">Listed Books</li>
-      <li className="m-2">Pages to Read</li>
+      <button className="m-2 btn bg-green-600 text-neutral-50">Home</button>
+      <button className="m-2 btn bg-green-600 text-neutral-50">
+        Listed Books
+      </button>
+      <button className="m-2 btn bg-green-600 text-neutral-50">
+        Pages to Read
+      </button>
     </>
   );
   return (
@@ -36,13 +40,14 @@ const Header = () => {
             {List}
           </ul>
         </div>
-        <a className="btn btn-ghost text-xl">daisyUI</a>
+        <a className="btn btn-ghost text-xl">BookPoka</a>
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1">{List}</ul>
       </div>
       <div className="navbar-end">
-        <a className="btn">Button</a>
+        <a className="btn mx-5 bg-green-600 text-neutral-50">Sign In</a>
+        <a className="btn bg-green-600 text-neutral-50">Sign Up</a>
       </div>
     </div>
   );

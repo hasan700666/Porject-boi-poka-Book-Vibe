@@ -6,7 +6,7 @@ const ShowBook = ({ data }) => {
 
   return (
     <>
-      <div className="card bg-base-100 w-96 shadow-sm border border-gray-200">
+      <div className="card bg-base-100 w-96 shadow-sm border border-gray-200 rounded-3xl">
         <figure className="bg-gray-100 rounded-4xl mx-10 my-3">
           <img className="h-60" src={data.image} alt="Shoes" />
         </figure>
@@ -23,8 +23,8 @@ const ShowBook = ({ data }) => {
           <p className="mb-5">by: {data.author}</p>
           <div className="border border-gray-200"></div>
           <div className="card-actions justify-between">
-            <div className="badge badge-outline">{data.category}</div>
-            <div className="badge badge-outline">
+            <div className="badge border border-gray-300">{data.category}</div>
+            <div className="badge border border-gray-300">
               <CiStar /> {data.rating}
             </div>
           </div>

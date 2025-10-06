@@ -1,6 +1,6 @@
 import React from "react";
 import Banner from "../Components/main/Banner";
-import Books from "../Components/book/Books";
+import Books from "../Components/main/book/Books";
 
 const Home = () => {
   return (
