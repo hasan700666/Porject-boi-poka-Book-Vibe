@@ -1,15 +1,22 @@
 import React from "react";
+import { NavLink } from "react-router";
 
 const Header = () => {
   const List = (
     <>
-      <button className="m-2 btn bg-green-600 text-neutral-50">Home</button>
-      <button className="m-2 btn bg-green-600 text-neutral-50">
-        Listed Books
-      </button>
-      <button className="m-2 btn bg-green-600 text-neutral-50">
-        Pages to Read
-      </button>
+      <NavLink to="/">
+        <button className="m-2 btn bg-green-600 text-neutral-50">Home</button>
+      </NavLink>
+      <NavLink to="list-book">
+        <button className="m-2 btn bg-green-600 text-neutral-50">
+          Listed Books
+        </button>
+      </NavLink>
+      <NavLink to="pages-to-read">
+        <button className="m-2 btn bg-green-600 text-neutral-50">
+          Pages to Read
+        </button>
+      </NavLink>
     </>
   );
   return (
